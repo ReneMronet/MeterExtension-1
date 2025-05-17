@@ -1,8 +1,4 @@
-
-
-
-# MeterExtension-1
-KAIFA Smart Meter with EnergyRadar MeterExtension #1
+KAIFA Smart Meter with Cuculus MeterExtension #1 in Home Assistant
 
 ![MeterExtension #1](https://github.com/user-attachments/assets/cf31232b-828a-49f7-9cfb-47d83e8427dc)
 
@@ -36,6 +32,6 @@ http://CUCULUS_METEREXTENSION_IP/api
 (Replace CUCULUS_METEREXTENSION_IP with the IP address of your Cuculus Meter Extension #1)
 
 
-
-
-
+- In Home Assistant, copy the files (__init__.py, sensor.py, manifest.json) with the file editor to /homeassistant/custom_components/cuculus_meterextension.
+- Restart Home Assistant.
+- Now you can display the values as an entity in Home Assistant.
