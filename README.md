@@ -1,5 +1,11 @@
+
+
+
 # MeterExtension-1
 KAIFA Smart Meter with EnergyRadar MeterExtension #1
+
+![MeterExtension #1](https://github.com/user-attachments/assets/cf31232b-828a-49f7-9cfb-47d83e8427dc)
+
 
 LINKS
 
@@ -13,3 +19,4 @@ https://oesterreichsenergie.at/fileadmin/user_upload/Smart_Meter-Plattform/20200
 
 Software for interface request (Postman):
 https://www.postman.com/
+1
