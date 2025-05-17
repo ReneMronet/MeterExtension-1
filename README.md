@@ -23,4 +23,18 @@ https://oesterreichsenergie.at/fileadmin/user_upload/Smart_Meter-Plattform/20200
 
 Software for interface request (Postman):
 https://www.postman.com/
-1
+
+
+INSTALLATION
+
+- First install the Cuculus Meter Extension #1 as described by the manufacturer.
+- Then connect the Cuculus Meter Extension #1 to your WLAN.
+
+-If you want to find out all values from your Cuculus Meter Extension #1, install the Postman software (link above) and enter the following into your browser:
+
+http://CUCULUS_METEREXTENSION_IP/api
+(Replace CUCULUS_METEREXTENSION_IP with the IP address of your Cuculus Meter Extension #1)
+
+
+
+
