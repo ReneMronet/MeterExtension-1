@@ -6,6 +6,10 @@ KAIFA Smart Meter with EnergyRadar MeterExtension #1
 
 ![MeterExtension #1](https://github.com/user-attachments/assets/cf31232b-828a-49f7-9cfb-47d83e8427dc)
 
+KAIFA
+
+![KAIFA](https://github.com/user-attachments/assets/31d9c65e-d366-4ac7-89a0-3967a34fde61)
+
 
 LINKS
 
