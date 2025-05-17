@@ -1,17 +1,17 @@
-KAIFA Smart Meter with Cuculus MeterExtension #1 in Home Assistant
+KAIFA / Honeywell DM515 (HS330S H2LAT1) Smart Meter with Cuculus MeterExtension #1 in Home Assistant
 
 Cuculus MeterExtension #1:
 
 ![MeterExtension #1](https://github.com/user-attachments/assets/cf31232b-828a-49f7-9cfb-47d83e8427dc)
 
-KAIFA Smart Meter:
+KAIFA / Honeywell Smart Meter:
 
 ![KAIFA](https://github.com/user-attachments/assets/31d9c65e-d366-4ac7-89a0-3967a34fde61)
 
 
 LINKS
 
-Manufacturer:
+- Manufacturer:
 
 https://www.cuculus.com/
 
@@ -20,13 +20,30 @@ https://energyradar.net/
 https://energyradar.net/en/?page_id=7888
 
 
-OBIS List (German language):
+- OBIS List (German language):
 
 https://oesterreichsenergie.at/fileadmin/user_upload/Smart_Meter-Plattform/20200201_Konzept_Kundenschnittstelle_SM.pdf
 
-Software for interface request (Postman):
+
+- Software for interface request (Postman):
+Just to see which values you could read out
+You don’t have to register - neither for the download nor after starting the program.
+It also works for this query without registration.
 
 https://www.postman.com/
+
+
+COMMAND
+
+Raw:
+
+{“cmd”: “meter_reading”,“id”: 0}
+
+Send
+
+Result:
+
+...
 
 
 INSTALLATION
