@@ -11,7 +11,7 @@ from homeassistant.const import (
 _LOGGER = logging.getLogger(__name__)
 
 SCAN_INTERVAL = timedelta(minutes=1)
-RESOURCE_URL = "http://METEREXTENSION_IP/api"
+RESOURCE_URL = "http://CUCULUS_METEREXTENSION_IP/api"
 HEADERS = {"content-type": "application/json"}
 PAYLOAD = '{"cmd": "meter_reading","id": 0}'
 
