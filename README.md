@@ -4,6 +4,7 @@ KAIFA Smart Meter with EnergyRadar MeterExtension #1
 LINKS
 
 Manufacturer:
+https://www.cuculus.com/
 https://energyradar.net/
 https://energyradar.net/en/?page_id=7888
 
