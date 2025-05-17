@@ -1,0 +1,9 @@
+{
+    "domain": "cuculus_meterextension",
+    "name": "Cuculus MeterExtension",
+    "documentation": "https://your-documentation-url",
+    "requirements": [],
+    "dependencies": [],
+    "codeowners": ["@dein_github_username"],
+    "version": "1.0.0"
+  }
