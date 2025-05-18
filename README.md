@@ -42,9 +42,158 @@ Raw:
 Send
 
 Result:
+```
+{
+    "meter": [
+        {
+            "meterid": "1ELSXXXXXXXXX",
+            "data": [
+                {
+                    "OBIS": "1-0:32.7.0.255",
+                    "scale": "-1",
+                    "unit": "35",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "2358"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:52.7.0.255",
+                    "scale": "-1",
+                    "unit": "35",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "2357"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:72.7.0.255",
+                    "scale": "-1",
+                    "unit": "35",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "2364"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:31.7.0.255",
+                    "scale": "-2",
+                    "unit": "33",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "568"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:51.7.0.255",
+                    "scale": "-2",
+                    "unit": "33",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "572"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:71.7.0.255",
+                    "scale": "-2",
+                    "unit": "33",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "573"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:1.7.0.255",
+                    "scale": "0",
+                    "unit": "27",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "0"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:2.7.0.255",
+                    "scale": "0",
+                    "unit": "27",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "3994"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:1.8.0.255",
+                    "scale": "0",
+                    "unit": "30",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "5470178"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:2.8.0.255",
+                    "scale": "0",
+                    "unit": "30",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "7640299"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:3.8.0.255",
+                    "scale": "0",
+                    "unit": "32",
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "4743"
+                        }
+                    ]
+                },
+                {
+                    "OBIS": "1-0:4.8.0.255",
+                    "scale": "0",
+                    "unit": "0",
 
-...
+                    "entry": [
+                        {
+                            "ts": "1722007035",
+                            "val": "6291429"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "result": "OK"
+}
+```
+Then you can copy the following items - depending on which values you want to query - into the sensor.py.
 
+To find out which value stands for what, compare the OBIS value with the values in the PDF file above.
+
+```
+Example: “OBIS”: “1-0:1.8.0.255”, = 1.8.0 (current drawn from the grid)
+```
 
 <h2>INSTALLATION</h2>
 
