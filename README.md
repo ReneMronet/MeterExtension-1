@@ -1,4 +1,4 @@
-KAIFA / Honeywell DM515 (HS330S H2LAT1) Smart Meter with Cuculus MeterExtension #1 in Home Assistant
+<h1>KAIFA / Honeywell DM515 (HS330S H2LAT1) Smart Meter with Cuculus MeterExtension #1 in Home Assistant</h1>
 
 Cuculus MeterExtension #1:
 
@@ -9,7 +9,7 @@ KAIFA / Honeywell Smart Meter:
 ![KAIFA](https://github.com/user-attachments/assets/31d9c65e-d366-4ac7-89a0-3967a34fde61)
 
 
-LINKS
+<h2>LINKS</h2>
 
 - Manufacturer:
 
@@ -46,7 +46,7 @@ Result:
 ...
 
 
-INSTALLATION
+<h2>INSTALLATION</h2>
 
 - First install the Cuculus Meter Extension #1 as described by the manufacturer.
 - Then connect the Cuculus Meter Extension #1 to your WLAN.
