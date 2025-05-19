@@ -1,0 +1,8 @@
+{
+  "name": "Cuculus MeterExtension",
+  "country": "DE",
+  "hacs": "1.35.0",
+  "homeassistant": "2025.5.0",
+  "render_readme": true,
+  "zip_release": true
+}

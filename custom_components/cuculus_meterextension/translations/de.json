@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Cuculus MeterExtension verbinden",
+        "description": "Geben Sie die IP-Adresse Ihres Cuculus MeterExtension ein.",
+        "data": {
+          "host": "IP-Adresse"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen. Bitte überprüfen Sie die IP-Adresse und stellen Sie sicher, dass das Gerät online ist.",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "abort": {
+      "already_configured": "Dieses Gerät ist bereits konfiguriert"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Optionen für Cuculus MeterExtension",
+        "description": "Konfigurieren Sie zusätzliche Einstellungen für Ihre MeterExtension Integration.",
+        "data": {
+          "scan_interval": "Aktualisierungsintervall (Sekunden)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_id": {
+        "name": "Zähler-ID"
+      },
+      "voltage_l1": {
+        "name": "Spannung L1"
+      },
+      "voltage_l2": {
+        "name": "Spannung L2"
+      },
+      "voltage_l3": {
+        "name": "Spannung L3"
+      },
+      "current_l1": {
+        "name": "Strom L1"
+      },
+      "current_l2": {
+        "name": "Strom L2"
+      },
+      "current_l3": {
+        "name": "Strom L3"
+      },
+      "active_power_import": {
+        "name": "Wirkleistung Import (1.7.0)"
+      },
+      "active_power_export": {
+        "name": "Wirkleistung Export (2.7.0)"
+      },
+      "energy_import": {
+        "name": "Energie Import (1.8.0)"
+      },
+      "energy_export": {
+        "name": "Energie Export (2.8.0)"
+      },
+      "reactive_energy_import": {
+        "name": "Blindenergie Import (3.8.0)"
+      },
+      "reactive_energy_export": {
+        "name": "Blindenergie Export (4.8.0)"
+      }
+    }
+  }
+}
