@@ -1,0 +1,24 @@
+refresh_data:
+  name: Aktualisiere Daten
+  description: Aktualisiert sofort die Daten vom Cuculus MeterExtension.
+  target:
+    entity:
+      integration: cuculus_meterextension
+      
+set_update_interval:
+  name: Aktualisierungsintervall setzen
+  description: Setzt das Aktualisierungsintervall für den Cuculus MeterExtension.
+  target:
+    entity:
+      integration: cuculus_meterextension
+  fields:
+    interval:
+      name: Intervall
+      description: Das Aktualisierungsintervall in Sekunden (mindestens 10).
+      required: true
+      selector:
+        number:
+          min: 10
+          max: 3600
+          step: 1
+          unit_of_measurement: Sekunden
