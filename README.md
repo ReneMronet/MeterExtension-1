@@ -1,5 +1,15 @@
 <h1>KAIFA / Honeywell DM515 (HS330S H2LAT1) Smart Meter with Cuculus - EnergyRadar MeterExtension #1 Integration for Home Assistant</h1>
 
+This integration connects your Cuculus MeterExtension electric meter to Home Assistant, providing real-time data on voltage, current, power, and energy consumption.
+Features
+
+Real-time energy monitoring - Voltage, current, and power for all three phases
+Energy metering - Import/export values for active and reactive energy
+Dashboard integration - All sensors can be easily added to the Home Assistant dashboard
+Energy dashboard compatibility - Fully compatible with Home Assistant's energy dashboard
+Configurable update rate - Adjustable polling intervals
+User-friendly setup - Simple configuration through the Home Assistant UI
+
 Cuculus MeterExtension #1:
 
 ![MeterExtension #1](https://github.com/user-attachments/assets/cf31232b-828a-49f7-9cfb-47d83e8427dc)
