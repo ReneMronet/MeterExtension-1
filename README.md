@@ -197,13 +197,14 @@ Example: “OBIS”: “1-0:1.8.0.255”, = 1.8.0 (current drawn from the grid)
 
 <h2>INSTALLATION</h2>
 
-- First install the Cuculus Meter Extension #1 as described by the manufacturer.
-- Then connect the Cuculus Meter Extension #1 to your WLAN.
--If you want to find out all values from your Cuculus Meter Extension #1, install the Postman software (link above) and enter the following into your browser:
+1. First install the Cuculus Meter Extension #1 as described by the manufacturer.
+2. Then connect the Cuculus Meter Extension #1 to your WLAN.
+3. Optionally: If you want to find out all values from your Cuculus Meter Extension #1, install the Postman software (link above) and enter the following into your browser:
 
 http://CUCULUS_METEREXTENSION_IP/api
 (Replace CUCULUS_METEREXTENSION_IP with the IP address of your Cuculus Meter Extension #1)
 
-- In Home Assistant, copy the files (__init__.py, sensor.py, manifest.json) with the file editor to /homeassistant/custom_components/cuculus_meterextension/
-- Restart Home Assistant.
-- Now you can display the values as an entity in Home Assistant.
+4. In Home Assistant, copy the files (__init__.py, sensor.py, manifest.json) with the file editor to /homeassistant/custom_components/cuculus_meterextension/
+5. Restart Home Assistant.
+6. Now you can display the values as an entity in Home Assistant.
+   
