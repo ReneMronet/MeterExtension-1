@@ -350,7 +350,7 @@ logger:
 
 <h3>Support</h3>
 
-- GitHub Issues: Report a bug
+- GitHub Issues: Report a bug (https://github.com/ReneMronet/ha-cuculus-meterextension/issues)
 - GitHub Discussions: Ask questions
 
 <h3>License</h3>
