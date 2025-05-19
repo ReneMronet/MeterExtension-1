@@ -1,5 +1,5 @@
 {
-  "domain": "ha-cuculus-meterextension",
+  "domain": "cuculus_meterextension",
   "name": "Cuculus MeterExtension",
   "codeowners": ["@ReneMronet"],
   "config_flow": true,
