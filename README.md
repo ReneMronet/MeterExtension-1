@@ -197,14 +197,132 @@ Example: “OBIS”: “1-0:1.8.0.255”, = 1.8.0 (current drawn from the grid)
 
 <h2>INSTALLATION</h2>
 
-1. First install the Cuculus Meter Extension #1 as described by the manufacturer.
-2. Then connect the Cuculus Meter Extension #1 to your WLAN.
-3. Optionally: If you want to find out all values from your Cuculus Meter Extension #1, install the Postman software (link above) and enter the following into your browser:
+Installation
+Option 1: Installation via HACS (recommended)
 
-http://CUCULUS_METEREXTENSION_IP/api
-(Replace CUCULUS_METEREXTENSION_IP with the IP address of your Cuculus Meter Extension #1)
+Make sure HACS is installed in your Home Assistant
+Go to HACS > "Integrations"
+Click the three dots in the top right corner and select "Custom repository"
+Add the URL https://github.com/ReneMronet/ha-cuculus-meterextension and select "Integration" as the category
+Click "Add"
+Search for "Cuculus MeterExtension" and install it
+Restart Home Assistant
 
-4. In Home Assistant, copy the files (__init__.py, sensor.py, manifest.json) with the file editor to /homeassistant/custom_components/cuculus_meterextension/
-5. Restart Home Assistant.
-6. Now you can display the values as an entity in Home Assistant.
+Option 2: Manual Installation
+
+Download the latest release
+Extract the archive
+Copy the cuculus_meterextension folder to the custom_components directory of your Home Assistant installation
+
+The path should look like: config/custom_components/cuculus_meterextension/
+
+
+Restart Home Assistant
+
+Configuration
+
+Go to Home Assistant > Settings > Devices & Services
+Click the "+ Integration" button in the bottom right corner
+Search for "Cuculus MeterExtension"
+Enter the IP address of your Cuculus MeterExtension device
+Done! The integration automatically creates all available sensors
+
+Configuration Options
+After setup, you can access configuration options:
+
+Go to Settings > Devices & Services > Integrations
+Find the Cuculus MeterExtension integration
+Click "Configure"
+Here you can adjust the update interval (default: 60 seconds)
+
+Using with the Energy Dashboard
+The integration is optimized for use with the Home Assistant Energy Dashboard:
+
+Go to Settings > Dashboards > Energy
+Under "Electricity consumption" add the sensor sensor.cuculus_energy_import_1_8_0
+If you have solar panels, you can add sensor.cuculus_energy_export_2_8_0 under "Return to grid"
+
+Getting Started with the Dashboard
+Here's a simple example dashboard to get started with the integration:
+yamltype: grid
+cards:
+  - type: gauge
+    entity: sensor.cuculus_active_power_import_1_7_0
+    name: Current Consumption
+    min: 0
+    max: 10000
+    severity:
+      green: 0
+      yellow: 3000
+      red: 6000
+  - type: gauge
+    entity: sensor.cuculus_voltage_l1
+    name: Voltage L1
+    min: 210
+    max: 250
+  - type: history-graph
+    entities:
+      - entity: sensor.cuculus_energy_import_1_8_0
+        name: Energy Consumption
+    hours_to_show: 24
+    refresh_interval: 0
+  - type: entities
+    entities:
+      - entity: sensor.cuculus_voltage_l1
+      - entity: sensor.cuculus_voltage_l2
+      - entity: sensor.cuculus_voltage_l3
+      - entity: sensor.cuculus_current_l1
+      - entity: sensor.cuculus_current_l2
+      - entity: sensor.cuculus_current_l3
+    title: Power Grid Overview
+columns: 2
+Available Services
+The integration provides two services:
+cuculus_meterextension.refresh_data
+Immediately refreshes data from the MeterExtension device.
+yamlservice: cuculus_meterextension.refresh_data
+target:
+  entity_id: sensor.cuculus_meter_id
+cuculus_meterextension.set_update_interval
+Sets the update interval for the MeterExtension device.
+yamlservice: cuculus_meterextension.set_update_interval
+target:
+  entity_id: sensor.cuculus_meter_id
+data:
+  interval: 30  # seconds
+Troubleshooting
+If you're experiencing issues with the integration, check the following:
+
+Connection problems
+
+Ensure the IP address is correct
+Check if the device is powered on and connected to the network
+Try accessing the API directly: http://YOUR_IP/api
+
+
+Incorrect values
+
+Check the physical connection to the electric meter
+Restart the MeterExtension device
+Use the refresh_data service to force an update
+
+
+Checking logs
+
+Increase the log level in your configuration.yaml:
+yamllogger:
+  default: warning
+  logs:
+    custom_components.cuculus_meterextension: debug
+
+
+
+
+Support
+
+GitHub Issues: Report a bug
+GitHub Discussions: Ask questions
+
+License
+This integration is licensed under the MIT License and is community-supported.
    
