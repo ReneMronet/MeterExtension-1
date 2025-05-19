@@ -1,13 +1,13 @@
 {
   "domain": "cuculus_meterextension",
   "name": "Cuculus MeterExtension",
-  "documentation": "https://github.com/ReneMronet/ha-cuculus-meterextension",
-  "issue_tracker": "https://github.com/ReneMronet/ha-cuculus-meterextension/issues",
-  "dependencies": [],
-  "config_flow": true,
   "codeowners": ["@ReneMronet"],
-  "requirements": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/ReneMronet/ha-cuculus-meterextension",
   "iot_class": "local_polling",
-  "version": "1.0.0",
-  "loggers": ["cuculus_meterextension"]
+  "issue_tracker": "https://github.com/ReneMronet/ha-cuculus-meterextension/issues",
+  "loggers": ["cuculus_meterextension"],
+  "requirements": [],
+  "version": "1.0.0"
 }
