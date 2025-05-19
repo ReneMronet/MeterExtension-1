@@ -217,7 +217,7 @@ Example: “OBIS”: “1-0:1.8.0.255”, = 1.8.0 (current drawn from the grid)
 6. Search for "Cuculus MeterExtension" and install it
 7. Restart Home Assistant
 
-<h3>Option 2: Manual Installation</h3>h3>
+<h3>Option 2: Manual Installation</h3>
 
 1. Download the latest release
 2. Extract the archive
@@ -241,7 +241,7 @@ After setup, you can access configuration options:
 3. Click "Configure"
 4. Here you can adjust the update interval (default: 60 seconds)
 
-<h3>Using with the Energy Dashboard</h3>h3>
+<h3>Using with the Energy Dashboard</h3>
 The integration is optimized for use with the Home Assistant Energy Dashboard:
 
 1. Go to Settings > Dashboards > Energy
