@@ -1,4 +1,4 @@
-<h1>KAIFA / Honeywell DM515 (HS330S H2LAT1) Smart Meter with Cuculus MeterExtension #1 in Home Assistant</h1>
+<h1>KAIFA / Honeywell DM515 (HS330S H2LAT1) Smart Meter with Cuculus - EnergyRadar MeterExtension #1 in Home Assistant</h1>
 
 Cuculus MeterExtension #1:
 
