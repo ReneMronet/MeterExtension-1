@@ -25,7 +25,7 @@ https://energyradar.net/en/?page_id=7888
 https://oesterreichsenergie.at/fileadmin/user_upload/Smart_Meter-Plattform/20200201_Konzept_Kundenschnittstelle_SM.pdf
 
 
-- Software for interface request (Postman):
+- Software (Postman) for interface request (optionally):
 Just to see which values you could read out
 You don’t have to register - neither for the download nor after starting the program.
 It also works for this query without registration.
