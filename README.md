@@ -8,7 +8,7 @@ Energy metering - Import/export values for active and reactive energy
 Dashboard integration - All sensors can be easily added to the Home Assistant dashboard
 Energy dashboard compatibility - Fully compatible with Home Assistant's energy dashboard
 Configurable update rate - Adjustable polling intervals
-User-friendly setup - Simple configuration through the Home Assistant UI
+User-friendly setup - Simple configuration through the Home Assistant UI 
 
 Cuculus MeterExtension #1:
 
