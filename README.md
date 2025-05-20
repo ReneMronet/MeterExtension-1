@@ -223,7 +223,7 @@ Example: “OBIS”: “1-0:1.8.0.255”, = 1.8.0 (current drawn from the grid)
 2. Extract the archive
 3. Copy the cuculus_meterextension folder to the custom_components directory of your Home Assistant installation
 The path should look like: config/custom_components/cuculus_meterextension/
-4.Restart Home Assistant
+4. Restart Home Assistant
 
 <h3>Configuration</h3>
 
