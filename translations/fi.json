@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Yhdistä Cuculus MeterExtension",
+        "description": "Anna Cuculus MeterExtension -laitteesi IP-osoite.",
+        "data": {
+          "host": "IP-osoite"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Yhteys epäonnistui. Tarkista IP-osoite ja varmista, että laite on verkossa.",
+      "unknown": "Odottamaton virhe"
+    },
+    "abort": {
+      "already_configured": "Tämä laite on jo konfiguroitu"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Cuculus MeterExtension -asetukset",
+        "description": "Määritä lisäasetukset MeterExtension-integraatiolle.",
+        "data": {
+          "scan_interval": "Päivitysväli (sekunteina)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_id": {
+        "name": "Mittarin tunniste"
+      },
+      "voltage_l1": {
+        "name": "Jännite L1"
+      },
+      "voltage_l2": {
+        "name": "Jännite L2"
+      },
+      "voltage_l3": {
+        "name": "Jännite L3"
+      },
+      "current_l1": {
+        "name": "Virta L1"
+      },
+      "current_l2": {
+        "name": "Virta L2"
+      },
+      "current_l3": {
+        "name": "Virta L3"
+      },
+      "active_power_import": {
+        "name": "Teho sisään (1.7.0)"
+      },
+      "active_power_export": {
+        "name": "Teho ulos (2.7.0)"
+      },
+      "energy_import": {
+        "name": "Energia sisään (1.8.0)"
+      },
+      "energy_export": {
+        "name": "Energia ulos (2.8.0)"
+      },
+      "reactive_energy_import": {
+        "name": "Loisteho sisään (3.8.0)"
+      },
+      "reactive_energy_export": {
+        "name": "Loisteho ulos (4.8.0)"
+      }
+    }
+  }
+}

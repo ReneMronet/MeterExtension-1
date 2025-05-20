@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Připojení Cuculus MeterExtension",
+        "description": "Zadejte IP adresu vašeho zařízení Cuculus MeterExtension.",
+        "data": {
+          "host": "IP adresa"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Připojení se nezdařilo. Zkontrolujte prosím IP adresu a ujistěte se, že je zařízení online.",
+      "unknown": "Neočekávaná chyba"
+    },
+    "abort": {
+      "already_configured": "Toto zařízení je již nakonfigurováno"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Možnosti pro Cuculus MeterExtension",
+        "description": "Nakonfigurujte další nastavení pro integraci MeterExtension.",
+        "data": {
+          "scan_interval": "Interval aktualizace (vteřiny)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_id": {
+        "name": "ID měřiče"
+      },
+      "voltage_l1": {
+        "name": "Napětí L1"
+      },
+      "voltage_l2": {
+        "name": "Napětí L2"
+      },
+      "voltage_l3": {
+        "name": "Napětí L3"
+      },
+      "current_l1": {
+        "name": "Proud L1"
+      },
+      "current_l2": {
+        "name": "Proud L2"
+      },
+      "current_l3": {
+        "name": "Proud L3"
+      },
+      "active_power_import": {
+        "name": "Činný příkon (1.7.0)"
+      },
+      "active_power_export": {
+        "name": "Činný výkon výstup (2.7.0)"
+      },
+      "energy_import": {
+        "name": "Importovaná energie (1.8.0)"
+      },
+      "energy_export": {
+        "name": "Exportovaná energie (2.8.0)"
+      },
+      "reactive_energy_import": {
+        "name": "Jalová energie import (3.8.0)"
+      },
+      "reactive_energy_export": {
+        "name": "Jalová energie export (4.8.0)"
+      }
+    }
+  }
+}

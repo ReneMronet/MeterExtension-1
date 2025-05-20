@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Anslut Cuculus MeterExtension",
+        "description": "Ange IP-adressen till din Cuculus MeterExtension.",
+        "data": {
+          "host": "IP-adress"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Anslutning misslyckades. Kontrollera IP-adressen och se till att enheten är online.",
+      "unknown": "Oväntat fel"
+    },
+    "abort": {
+      "already_configured": "Den här enheten är redan konfigurerad"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Alternativ för Cuculus MeterExtension",
+        "description": "Konfigurera ytterligare inställningar för din MeterExtension-integration.",
+        "data": {
+          "scan_interval": "Uppdateringsintervall (sekunder)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_id": {
+        "name": "Mätar-ID"
+      },
+      "voltage_l1": {
+        "name": "Spänning L1"
+      },
+      "voltage_l2": {
+        "name": "Spänning L2"
+      },
+      "voltage_l3": {
+        "name": "Spänning L3"
+      },
+      "current_l1": {
+        "name": "Ström L1"
+      },
+      "current_l2": {
+        "name": "Ström L2"
+      },
+      "current_l3": {
+        "name": "Ström L3"
+      },
+      "active_power_import": {
+        "name": "Aktiv effekt import (1.7.0)"
+      },
+      "active_power_export": {
+        "name": "Aktiv effekt export (2.7.0)"
+      },
+      "energy_import": {
+        "name": "Energi import (1.8.0)"
+      },
+      "energy_export": {
+        "name": "Energi export (2.8.0)"
+      },
+      "reactive_energy_import": {
+        "name": "Reaktiv energi import (3.8.0)"
+      },
+      "reactive_energy_export": {
+        "name": "Reaktiv energi export (4.8.0)"
+      }
+    }
+  }
+}

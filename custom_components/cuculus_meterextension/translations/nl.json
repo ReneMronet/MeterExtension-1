@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Cuculus MeterExtension verbinden",
+        "description": "Voer het IP-adres van uw Cuculus MeterExtension in.",
+        "data": {
+          "host": "IP-adres"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbinding mislukt. Controleer het IP-adres en zorg ervoor dat het apparaat online is.",
+      "unknown": "Onverwachte fout"
+    },
+    "abort": {
+      "already_configured": "Dit apparaat is al geconfigureerd"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opties voor Cuculus MeterExtension",
+        "description": "Configureer extra instellingen voor uw MeterExtension-integratie.",
+        "data": {
+          "scan_interval": "Update-interval (seconden)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_id": {
+        "name": "Meter-ID"
+      },
+      "voltage_l1": {
+        "name": "Spanning L1"
+      },
+      "voltage_l2": {
+        "name": "Spanning L2"
+      },
+      "voltage_l3": {
+        "name": "Spanning L3"
+      },
+      "current_l1": {
+        "name": "Stroom L1"
+      },
+      "current_l2": {
+        "name": "Stroom L2"
+      },
+      "current_l3": {
+        "name": "Stroom L3"
+      },
+      "active_power_import": {
+        "name": "Actief vermogen import (1.7.0)"
+      },
+      "active_power_export": {
+        "name": "Actief vermogen export (2.7.0)"
+      },
+      "energy_import": {
+        "name": "Energie import (1.8.0)"
+      },
+      "energy_export": {
+        "name": "Energie export (2.8.0)"
+      },
+      "reactive_energy_import": {
+        "name": "Blindenergie import (3.8.0)"
+      },
+      "reactive_energy_export": {
+        "name": "Blindenergie export (4.8.0)"
+      }
+    }
+  }
+}

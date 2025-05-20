@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à Cuculus MeterExtension",
+        "description": "Saisissez l'adresse IP de votre Cuculus MeterExtension.",
+        "data": {
+          "host": "Adresse IP"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Échec de la connexion. Veuillez vérifier l'adresse IP et vous assurer que l'appareil est en ligne.",
+      "unknown": "Erreur inattendue"
+    },
+    "abort": {
+      "already_configured": "Cet appareil est déjà configuré"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options pour Cuculus MeterExtension",
+        "description": "Configurez des paramètres supplémentaires pour votre intégration MeterExtension.",
+        "data": {
+          "scan_interval": "Intervalle de mise à jour (secondes)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_id": {
+        "name": "ID du compteur"
+      },
+      "voltage_l1": {
+        "name": "Tension L1"
+      },
+      "voltage_l2": {
+        "name": "Tension L2"
+      },
+      "voltage_l3": {
+        "name": "Tension L3"
+      },
+      "current_l1": {
+        "name": "Courant L1"
+      },
+      "current_l2": {
+        "name": "Courant L2"
+      },
+      "current_l3": {
+        "name": "Courant L3"
+      },
+      "active_power_import": {
+        "name": "Puissance active importée (1.7.0)"
+      },
+      "active_power_export": {
+        "name": "Puissance active exportée (2.7.0)"
+      },
+      "energy_import": {
+        "name": "Énergie importée (1.8.0)"
+      },
+      "energy_export": {
+        "name": "Énergie exportée (2.8.0)"
+      },
+      "reactive_energy_import": {
+        "name": "Énergie réactive importée (3.8.0)"
+      },
+      "reactive_energy_export": {
+        "name": "Énergie réactive exportée (4.8.0)"
+      }
+    }
+  }
+}
