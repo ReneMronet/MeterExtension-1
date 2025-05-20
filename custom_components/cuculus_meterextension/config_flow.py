@@ -102,7 +102,7 @@ class CuculusOptionsFlowHandler(config_entries.OptionsFlow):
 
         options = {
             vol.Optional("scan_interval", default=self.config_entry.options.get("scan_interval", 60)): vol.All(
-                vol.Coerce(int), vol.Range(min=10, max=3600)
+                vol.Coerce(int), vol.Range(min=10, max=86400)
             ),
         }
 
@@ -213,7 +213,7 @@ class CuculusOptionsFlowHandler(config_entries.OptionsFlow):
 
         options = {
             vol.Optional("scan_interval", default=self.config_entry.options.get("scan_interval", 60)): vol.All(
-                vol.Coerce(int), vol.Range(min=10, max=3600)
+                vol.Coerce(int), vol.Range(min=10, max=86400)
             ),
         }
 
