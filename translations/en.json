@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Cuculus MeterExtension",
+        "description": "Enter the IP address of your Cuculus MeterExtension.",
+        "data": {
+          "host": "IP Address"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Connection failed. Please check the IP address and ensure the device is online.",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This device is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options for Cuculus MeterExtension",
+        "description": "Configure additional settings for your MeterExtension integration.",
+        "data": {
+          "scan_interval": "Update interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_id": {
+        "name": "Meter ID"
+      },
+      "voltage_l1": {
+        "name": "Voltage L1"
+      },
+      "voltage_l2": {
+        "name": "Voltage L2"
+      },
+      "voltage_l3": {
+        "name": "Voltage L3"
+      },
+      "current_l1": {
+        "name": "Current L1"
+      },
+      "current_l2": {
+        "name": "Current L2"
+      },
+      "current_l3": {
+        "name": "Current L3"
+      },
+      "active_power_import": {
+        "name": "Active Power Import (1.7.0)"
+      },
+      "active_power_export": {
+        "name": "Active Power Export (2.7.0)"
+      },
+      "energy_import": {
+        "name": "Energy Import (1.8.0)"
+      },
+      "energy_export": {
+        "name": "Energy Export (2.8.0)"
+      },
+      "reactive_energy_import": {
+        "name": "Reactive Energy Import (3.8.0)"
+      },
+      "reactive_energy_export": {
+        "name": "Reactive Energy Export (4.8.0)"
+      }
+    }
+  }
+}
