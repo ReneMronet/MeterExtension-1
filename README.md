@@ -239,7 +239,7 @@ After setup, you can access configuration options:
 1. Go to Settings > Devices & Services > Integrations
 2. Find the Cuculus MeterExtension integration
 3. Click "Configure"
-4. Here you can adjust the update interval (default: 60 seconds)
+4. Here you can adjust the update interval (default: 60 seconds, min: 10 seconds, max: 86400 seconds)
 
 <h3>Using with the Energy Dashboard</h3>
 The integration is optimized for use with the Home Assistant Energy Dashboard:
